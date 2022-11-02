@@ -6,10 +6,10 @@ Google Drive link: https://drive.google.com/drive/folders/1_R1lRLfJhQ0jbeHhlSuO2
 
 Contributors:
 
-Andrew Higa
+Andrew Higa       @higaAndrew
 
-Thomas Lam
+Thomas Lam        @Tlam3358
 
-Gregory Martinez
+Gregory Martinez  @greg-2000
 
-Daylan Stoica   @DaylanStoica
+Daylan Stoica     @DaylanStoica

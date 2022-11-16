@@ -5361,3 +5361,19 @@ INSERT INTO CountryLanguage VALUES ('RUS','Belorussian','F',0.3);
 INSERT INTO CountryLanguage VALUES ('USA','Portuguese','F',0.2);
 COMMIT;
 
+-- CountryEducation
+
+DROP TABLE IF EXISTS CountryEducation;
+CREATE TABLE CountryEducation (
+  CountryCode CHAR(3) NOT NULL DEFAULT '',
+  AvgIQ INT(11) NOT NULL DEFAULT '',
+  Degree INT(11) NOT NULL DEFAULT '',
+  Money INT(11) NOT NULL DEFAULT '',
+  MoneyUSD INT(11) NOT NULL DEFAULT '',
+  PRIMARY KEY (CountryCode)
+) ENGINE=InnDB DEFAULT CHARSET=utf8;
+START TRANSACTION;
+INSERT INTO CountryEducation VALUES ('USA','98','56.6','235.74','235.74');
+INSERT INTO CountryEducation VALUES ('JAP','106.49','53.7','5400','39');
+INSERT INTO CountryEducation VALUES ('
+                                  

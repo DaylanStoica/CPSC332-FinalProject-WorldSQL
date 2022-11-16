@@ -5375,5 +5375,11 @@ CREATE TABLE CountryEducation (
 START TRANSACTION;
 INSERT INTO CountryEducation VALUES ('USA','98','56.6','235.74','235.74');
 INSERT INTO CountryEducation VALUES ('JAP','106.49','53.7','5400','39');
-INSERT INTO CountryEducation VALUES ('
+INSERT INTO CountryEducation VALUES ('TWN','106.47','45','608.6','20');
+INSERT INTO CountryEducation VALUES ('SGP','105.89','41.3','10.7','8');
+INSERT INTO CountryEducation VALUES ('CHN','105.37','15','3700','525');
+INSERT INTO CountryEducation VALUES ('KOR','102.35','69.8','70000','53');
+INSERT INTO CountryEducation VALUES ('FIN','101.2','40','12.4','13');
+INSERT INTO CountryEducation VALUES ('NLD','100.74','38','15.4','16');
+INSERT INTO CountryEducation VALUES ('DEU','100.74','
                                   

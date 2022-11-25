@@ -5381,5 +5381,6 @@ INSERT INTO CountryEducation VALUES ('CHN','105.37','15','3700','525');
 INSERT INTO CountryEducation VALUES ('KOR','102.35','69.8','70000','53');
 INSERT INTO CountryEducation VALUES ('FIN','101.2','40','12.4','13');
 INSERT INTO CountryEducation VALUES ('NLD','100.74','38','15.4','16');
-INSERT INTO CountryEducation VALUES ('DEU','100.74','
+INSERT INTO CountryEducation VALUES ('DEU','100.74','56','231','239');
+INSERT INTO CountryEducation VALUES ('RUS','97','25.1','1800','30');
                                   

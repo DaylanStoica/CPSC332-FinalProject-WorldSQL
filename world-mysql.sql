@@ -5383,4 +5383,31 @@ INSERT INTO CountryEducation VALUES ('FIN','101.2','40','12.4','13');
 INSERT INTO CountryEducation VALUES ('NLD','100.74','38','15.4','16');
 INSERT INTO CountryEducation VALUES ('DEU','100.74','56','231','239');
 INSERT INTO CountryEducation VALUES ('RUS','97','25.1','1800','30');
-                                  
+COMMIT;
+
+--CountryCovid
+
+DROP TABLE IF EXISTS CountryCovid;
+CREATE TABLE CountryCovid (
+  CountryCode CHAR(3) NOT NULL DEFAULT '',
+  Capital NUM(11) NOT NULL DEFAULT '',
+  Deaths NUM(11) NOT NULL DEFAULT '',
+  Cases FLOAT(4,2) NOT NULL DEFAULT '0.0',
+  Vaccinations NUM(11) NOT NULL DEFAULT '',
+  PRIMNARY KEY (CountryCode, Capital)
+  ) ENGINE=InnDB DEFAULT CHARSET=utf8;
+  START TRANSACTION;
+  
+  INSERT INTO CountryCovid VALUES ('BEL','179','32959','4.62','29419333');
+  INSERT INTO CountryCovid VALUES ('BRA','211','688395','34.91','473133683');
+  INSERT INTO CountryCovid VALUES ('FRA','2974','157615','37.25','151282471');
+  INSERT INTO CountryCovid VALUES ('PHL','766','64298','4.02','167964363');
+  INSERT INTO CountryCovid VALUES ('USA','3813','10007862','98.09','646524294');
+  INSERT INTO CountryCovid VALUES ('JPN','1532','47245','23.24','335919769');
+  INSERT INTO CountryCovid VALUES ('ANT','33','22946','8.54','36104942');
+  INSERT INTO CountryCovid VALUES ('CHN','1891','5549','1.15','3441334000');
+  INSERT INTO CountryCovid VALUES ('LAO','2432','758','0.216','11111066');
+  INSERT INTO CountryCovid VALUES ('IND','1109','530509','44.67','2198123903');
+  COMMIT;
+  
+  

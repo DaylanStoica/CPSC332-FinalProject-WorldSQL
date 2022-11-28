@@ -5365,24 +5365,24 @@ COMMIT;
 
 DROP TABLE IF EXISTS CountryEducation;
 CREATE TABLE CountryEducation (
-  CountryCode CHAR(3) NOT NULL DEFAULT '',
-  AvgIQ INT(11) NOT NULL DEFAULT '',
-  Degree INT(11) NOT NULL DEFAULT '',
-  Money INT(11) NOT NULL DEFAULT '',
-  MoneyUSD INT(11) NOT NULL DEFAULT '',
+  CountryCode CHAR(3) NOT NULL DEFAULT '0.0',
+  AvgIQ FLOAT(5,2) NOT NULL DEFAULT '0.0',
+  Degree FLOAT(5,2) NOT NULL DEFAULT '0.0',
+  Money FLOAT(5,2) NOT NULL DEFAULT '0.0',
+  MoneyUSD FLOAT(5,2) NOT NULL DEFAULT '0.0',
   PRIMARY KEY (CountryCode)
 ) ENGINE=InnDB DEFAULT CHARSET=utf8;
 START TRANSACTION;
-INSERT INTO CountryEducation VALUES ('USA','98','56.6','235.74','235.74');
-INSERT INTO CountryEducation VALUES ('JAP','106.49','53.7','5400','39');
-INSERT INTO CountryEducation VALUES ('TWN','106.47','45','608.6','20');
-INSERT INTO CountryEducation VALUES ('SGP','105.89','41.3','10.7','8');
-INSERT INTO CountryEducation VALUES ('CHN','105.37','15','3700','525');
-INSERT INTO CountryEducation VALUES ('KOR','102.35','69.8','70000','53');
-INSERT INTO CountryEducation VALUES ('FIN','101.2','40','12.4','13');
-INSERT INTO CountryEducation VALUES ('NLD','100.74','38','15.4','16');
-INSERT INTO CountryEducation VALUES ('DEU','100.74','56','231','239');
-INSERT INTO CountryEducation VALUES ('RUS','97','25.1','1800','30');
+INSERT INTO CountryEducation VALUES ('USA','98.0','56.6','235.74','235.74');
+INSERT INTO CountryEducation VALUES ('JAP','106.49','53.7','5400.0','39.0');
+INSERT INTO CountryEducation VALUES ('TWN','106.47','45.0','608.6','20.0');
+INSERT INTO CountryEducation VALUES ('SGP','105.89','41.3','10.7','8.0');
+INSERT INTO CountryEducation VALUES ('CHN','105.37','15.0','3700.0','525.0');
+INSERT INTO CountryEducation VALUES ('KOR','102.35','69.8','70000.0','53.0');
+INSERT INTO CountryEducation VALUES ('FIN','101.2','40.0','12.4','13.0');
+INSERT INTO CountryEducation VALUES ('NLD','100.74','38.0','15.4','16.0');
+INSERT INTO CountryEducation VALUES ('DEU','100.74','56.0','231.0','239.0');
+INSERT INTO CountryEducation VALUES ('RUS','97.0','25.1','1800.0','30.0');
 COMMIT;
 
 --CountryCovid
@@ -5397,7 +5397,6 @@ CREATE TABLE CountryCovid (
   PRIMNARY KEY (CountryCode, Capital)
   ) ENGINE=InnDB DEFAULT CHARSET=utf8;
   START TRANSACTION;
-  
   INSERT INTO CountryCovid VALUES ('BEL','179','32959','4.62','29419333');
   INSERT INTO CountryCovid VALUES ('BRA','211','688395','34.91','473133683');
   INSERT INTO CountryCovid VALUES ('FRA','2974','157615','37.25','151282471');
@@ -5421,7 +5420,7 @@ CREATE TABLE CountryDebt (
   CurrencyType CHAR(45) NOT NULL DEFAULT '',
   PRIMARY KEY (CountryCode, DebtTotal)
   FOREIGN KEY (CountryCode) REFERENCES Country(Code)
-);
+) ENGINE=InnDB DEFAULT CHARSET=utf8;
 START TRANSACTION;
 INSERT INTO CountryDebt VALUES ('JAP',1028000000000,9087000000000,237.00,'Yen');
 INSERT INTO CountryDebt VALUES ('GRC',332600000000,379000000000,177.00,'Euro');

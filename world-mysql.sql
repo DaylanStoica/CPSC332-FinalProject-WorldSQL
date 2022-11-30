@@ -5385,7 +5385,7 @@ INSERT INTO CountryEducation VALUES ('DEU','100.74','56.0','231.0','239.0');
 INSERT INTO CountryEducation VALUES ('RUS','97.0','25.1','1800.0','30.0');
 COMMIT;
 
---CountryCovid
+-- CountryCovid
 
 DROP TABLE IF EXISTS CountryCovid;
 CREATE TABLE CountryCovid (

@@ -5394,7 +5394,7 @@ CREATE TABLE CountryCovid (
   Deaths INT(11) NOT NULL DEFAULT '0',
   Cases FLOAT(4,2) NOT NULL DEFAULT '0.0',
   Vaccinations BIGINT(15) NOT NULL DEFAULT '0',
-  PRIMNARY KEY (CountryCode, Capital)
+  PRIMARY KEY (CountryCode, Capital)
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   START TRANSACTION;
   INSERT INTO CountryCovid VALUES ('BEL','179','32959','4.62','29419333');
